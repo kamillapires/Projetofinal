@@ -102,11 +102,11 @@ st.dataframe(ipca_dados)
 
 #Combinado as duas df
 
+
+
+
+
 df2 = pd.merge(df, ipca_dados, on='Ano')
-
-
-#Nova df com a nova coluna de Receita Real
-
 df2["Receita Real"] = df2["Receita Líquida"] - (df2["Receita Líquida"] * (df2["IPCA"]/100))
 st.dataframe(df2)
 
