@@ -8,15 +8,15 @@ st.header("📊 Projeto Final – Análise Contábil com Ajuste Econômico")
 st.write("Este projeto tem como objetivo integrar análise de dados contábeis de empresas com indicadores econômicos, utilizando Python, Pandas, Ipeadata e Streamlit.")
 
 if st.checkbox("Mostrar enunciado 1)"):
-    st.write("📝 1) Configure o título na barra do navegador, da página do projeto no Streamlit e descrição inicial do projeto (peso: 1,0)")
-    st.write("- Título na barra (`page_title`): Lista de Exercícios 4")
-    st.write("- Título da página (`header`): Projeto Final - Análise Contábil com Ajuste Econômico")
+    st.write("📝 1) Configure o título na barra do navegador, da página do projeto no Streamlit e descrição inicial do projeto (peso: 1,0).")
+    st.write("- Título na barra (`page_title`): Lista de Exercícios 4.")
+    st.write("- Título da página (`header`): Projeto Final - Análise Contábil com Ajuste Econômico.")
     st.write("- Descrição projeto (`write`): Este projeto tem como objetivo integrar análise de dados contábeis de empresas com indicadores econômicos, utilizando Python, Pandas, Ipeadata e Streamlit.")
 else:
     st.write("📌 Enunciado ocultado.")
 
 if st.checkbox("Mostrar enunciado 2)"):
-    st.write("📝 2) Importe os dados do arquivo empresas_dados.csv utilizando pandas e apresente todas as linhas da df (peso: 1,0)")
+    st.write("📝 2) Importe os dados do arquivo empresas_dados.csv utilizando pandas e apresente todas as linhas da df (peso: 1,0).")
     st.write("Dica: Utilize `head(len(df))")
 else:
     st.write("📌 Enunciado ocultado.")
@@ -29,7 +29,7 @@ df = pd.read_csv(arquivo, sep=";")
 st.dataframe(df.head(len(df)))
 
 if st.checkbox("Mostrar enunciado 3)"):
-    st.write("📝 3) Calcule os indicadores Margem Líquida e ROA e salve como novas coluna da df. Depois apresente os dois indicadores no mesmo gráfico de linhas, agrupado por Ano  (peso: 1,0)")
+    st.write("📝 3) Calcule os indicadores Margem Líquida e ROA e salve como novas coluna da df. Depois apresente os dois indicadores no mesmo gráfico de linhas, agrupado por Ano  (peso: 1,0).")
     st.write("- Margem Líquida = Lucro Líquido / Receita Líquida * 100")
     st.write("- ROA = Lucro Líquido / Ativo Total *  100")
 else:
@@ -71,11 +71,11 @@ fig.tight_layout()
 st.pyplot(fig)
 
 if st.checkbox("Mostrar enunciado 4)"):
-    st.write("📝 4) Utilize o pacote ipeadatapy e faça busca para encontrar o indicador que traga o IPCA, taxa de variação, em % e anual: (peso: 2,0)")
+    st.write("📝 4) Utilize o pacote ipeadatapy e faça busca para encontrar o indicador que traga o IPCA, taxa de variação, em % e anual: (peso: 2,0).")
     st.write("- Baixe os dados no período de 2010 a 2024")
     st.write("- Altere o nome da coluna 'YEAR' para 'Ano'")
     st.write("- Altere o nome da coluna 'VALUE ((% a.a.))' para 'IPCA'")
-    st.write("- Apresente a df para checar se tudo deu certo")
+    st.write("- Apresente a df para checar se tudo deu certo.")
 else:
     st.write(" 📌 Enunciado ocultado.")
 
