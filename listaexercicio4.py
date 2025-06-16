@@ -3,7 +3,7 @@ import streamlit as st
 
 # 📊 Projeto Final – Análise Contábil com Ajuste Econômico
 
-Este projeto tem como objetivo integrar análise de dados contábeis de empresas com indicadores econômicos, utilizando Python, Pandas, Ipeadata e Streamlit.
+"""Este projeto tem como objetivo integrar análise de dados contábeis de empresas com indicadores econômicos, utilizando Python, Pandas, Ipeadata e Streamlit.
 """
 
 
