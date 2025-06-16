@@ -28,12 +28,12 @@ arquivo = "https://raw.githubusercontent.com/kamillapires/Projetofinal/refs/head
 df = pd.read_csv(arquivo, sep=";")
 st.dataframe(df.head(len(df)))
 
-"""3) Calcule os indicadores Margem Líquida e ROA e salve como novas coluna da df. Depois apresente os dois indicadores no mesmo gráfico de linhas, agrupado por Ano  (peso: 1,0)
-
-- Margem Líquida = Lucro Líquido / Receita Líquida * 100
-- ROA = Lucro Líquido / Ativo Total *  100
-"""
-
+if st.checkbox("Mostrar enunciado 3)"):
+    st.write(""3) Calcule os indicadores Margem Líquida e ROA e salve como novas coluna da df. Depois apresente os dois indicadores no mesmo gráfico de linhas, agrupado por Ano  (peso: 1,0)")
+    st.write("- Margem Líquida = Lucro Líquido / Receita Líquida * 100')
+    st.write("- ROA = Lucro Líquido / Ativo Total *  100")
+else:    st.write("Enunciado ocultado.")
+    
 import matplotlib.pyplot as plt
 df["Margem Líquida"] = df["Lucro Líquido"] / df["Receita Líquida"] * 100
 df["ROA"] = df["Lucro Líquido"] / df["Ativo Total"] * 100
