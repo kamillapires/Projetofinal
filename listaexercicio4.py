@@ -111,8 +111,10 @@ else:
 
 df2 = pd.merge(df, ipca_dados, on='Ano')
 if st.checkbox('Mostrar dataframe unificado:'):
-    st.write("Dataframe Unificado:")
+    st.subheader("📂 Dataframe Unificado:")
     st.dataframe(df2)
+else:
+    st.write(" 📌 Clique acima para exibir o dataframe unificado.")
 
 
 #Nova df com a nova coluna de Receita Real 
