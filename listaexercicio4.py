@@ -21,7 +21,7 @@ if st.checkbox("Mostrar enunciado 2)"):
 else:
     st.write("Enunciado ocultado.")
 
-
+st.header("DataFrame com os Dados das Empresas:")
 
 import pandas as pd
 arquivo = "https://raw.githubusercontent.com/kamillapires/Projetofinal/refs/heads/main/empresas_dados.csv"
