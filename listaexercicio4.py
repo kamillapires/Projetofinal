@@ -42,8 +42,9 @@ st.dataframe(df.head(len(df)))
 import matplotlib.pyplot as plt
 df["Margem Líquida"] = df["Lucro Líquido"] / df["Receita Líquida"] * 100
 df["ROA"] = df["Lucro Líquido"] / df["Ativo Total"] * 100
+
 if st.checkbox('Mostrar dataframe'):
-     st.write("Nova df com as novas colunas Margem Líquida e ROA adicionadas:")
+    st.write("Nova df com as novas colunas Margem Líquida e ROA adicionadas:")
     st.dataframe(df)
 
 df_agrupado = df.groupby('Ano')[['Margem Líquida', 'ROA']].mean().reset_index()
