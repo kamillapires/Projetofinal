@@ -11,7 +11,7 @@ Original file is located at
 Este projeto tem como objetivo integrar análise de dados contábeis de empresas com indicadores econômicos, utilizando Python, Pandas, Ipeadata e Streamlit.
 """
 
-!pip install pandas
+
 
 """1) Configure o título na barra do navegador, da página do projeto no Streamlit e descrição inicial do projeto (peso: 1,0)
 
