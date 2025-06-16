@@ -57,7 +57,7 @@ ax.plot(df_agrupado['Ano'], df_agrupado['ROA'], marker='o', label='ROA')
 ax.set_title("Margem Líquida e ROA ao longo dos anos")
 ax.set_xlabel("Anos")
 ax.set_ylabel("Valores")
-ax.legend(title="Margem Líquida", "ROA"
+ax.legend(title="Margem Líquida", "ROA")
 ax.tight_layout()
 st.pyplot(fig)
 
