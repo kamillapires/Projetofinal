@@ -141,9 +141,10 @@ ax.set_xticks(anos)
 fig.tight_layout()
 st.pyplot(fig)
 
-"""7) Faça os ajustes necessários e leve este projeto para a web usando GitHub e Streamlit (peso: 2,0)
-
-- Caça os ajustes necessários no projeto para ser publicado no Streamlit
-- Crie novo repositório público no GitHub e leve os arquivos .py e .csv pra lá. Aproveite e crie o arquivo requirements.txt com os pacotes utilizados no projeto
-- Crie novo projeto no Streamlit e associe ao repositório da lista
-"""
+if st.checkbox("Mostrar enunciado 7)"):
+    st.write("📝 7) Faça os ajustes necessários e leve este projeto para a web usando GitHub e Streamlit (peso: 2,0)")
+    st.write("- Faça os ajustes necessários no projeto para ser publicado no Streamlit")
+    st.write("- Crie novo repositório público no GitHub e leve os arquivos .py e .csv pra lá. Aproveite e crie o arquivo requirements.txt com os pacotes utilizados no projeto")
+    st.write("- Crie novo projeto no Streamlit e associe ao repositório da lista")
+else:
+    st.write(" 📌 Enunciado ocultado.")
