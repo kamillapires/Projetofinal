@@ -13,7 +13,7 @@ if st.checkbox("Mostrar enunciado 1)"):
     st.write("- Título da página (`header`): Projeto Final - Análise Contábil com Ajuste Econômico")
     st.write("- Descrição projeto (`write`): Este projeto tem como objetivo integrar análise de dados contábeis de empresas com indicadores econômicos, utilizando Python, Pandas, Ipeadata e Streamlit.")
 else:
-    st.write("Enunciado ocultado.")
+    st.write("📌 Enunciado ocultado.")
 
 if st.checkbox("Mostrar enunciado 2)"):
     st.write("2) Importe os dados do arquivo empresas_dados.csv utilizando pandas e apresente todas as linhas da df (peso: 1,0)")
