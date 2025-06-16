@@ -11,7 +11,7 @@ if st.checkbox("Mostrar enunciado"):
     st.write("1) Configure o título na barra do navegador, da página do projeto no Streamlit e descrição inicial do projeto (peso: 1,0)"
 
 - Título na barra (`page_title`): Lista de Exercícios 4
-- Título da página (`header`): Projeto Final – Análise Contábil com Ajuste Econômico
+- Título da página (`header`): Projeto Final - Análise Contábil com Ajuste Econômico
 - Descrição projeto (`write`): Este projeto tem como objetivo integrar análise de dados contábeis de empresas com indicadores econômicos, utilizando Python, Pandas, Ipeadata e Streamlit.")
 else:
     st.write("Enunciado ocultado.")
