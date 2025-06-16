@@ -46,6 +46,9 @@ st.dataframe(df)
 
 df_agrupado = df.groupby('Ano')[['Margem Líquida', 'ROA']].mean().reset_index()
 
+anos = df_agrupado['Ano'].unique()  # Garante que todos os anos estejam listados
+anos = sorted(anos)
+
 fig, ax = plt.subplots()
 plt.figure(figsize=(10, 6))
 plt.grid(True)
