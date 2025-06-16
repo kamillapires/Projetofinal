@@ -8,7 +8,7 @@ import streamlit as st
 """
 
 if st.checkbox("Mostrar enunciado 1)"):
-    st.write("1) Configure o título na barra do navegador, da página do projeto no Streamlit e descrição inicial do projeto (peso: 1,0)")
+    st.write("📝 1) Configure o título na barra do navegador, da página do projeto no Streamlit e descrição inicial do projeto (peso: 1,0)")
     st.write("- Título na barra (`page_title`): Lista de Exercícios 4")
     st.write("- Título da página (`header`): Projeto Final - Análise Contábil com Ajuste Econômico")
     st.write("- Descrição projeto (`write`): Este projeto tem como objetivo integrar análise de dados contábeis de empresas com indicadores econômicos, utilizando Python, Pandas, Ipeadata e Streamlit.")
