@@ -110,8 +110,9 @@ st.dataframe(df2)
 
 """6) Crie gráfico de linha que apresente as variáveis Receita Líquida e Receita Real ao longo dos anos (no mesmo gráfico) (peso: 1,0)"""
 
-plt.subplots(figsize=(10, 6))
-plt.grid(True)
+fig, ax = plt.subplots()
+plt.figure(figsize=(10,6))
+ax.grid(True)
 
 ax.plot(df2["Ano"], df2["Receita Líquida"], marker='o', label='Receita Líquida')
 ax.plot(df2["Ano"], df2["Receita Real"], marker='o', label='Receita Real')
