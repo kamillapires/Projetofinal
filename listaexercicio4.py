@@ -106,7 +106,7 @@ st.dataframe(ipca_dados)
 #Combinado as duas df
 
 df2 = pd.merge(df, ipca_dados, on='Ano')
-if st.checkbox('Mostrar dataframe unificado'):
+if st.checkbox('Mostrar dataframe unificado:'):
     st.write("DATAFRAME UNIFICADO:")
     st.dataframe(df2)
 
