@@ -119,7 +119,7 @@ else:
 
 #Nova df com a nova coluna de Receita Real 
 df2["Receita Real"] = df2["Receita Líquida"] - (df2["Receita Líquida"] * (df2["IPCA"]/100))
-st.write("DataFrame Combinado com Coluna Receita Real Adicionada:")
+st.subheader(" 💾 Dados Atualizados com a Inclusão da 'Receita Real'")
 st.dataframe(df2)
 
 """6) Crie gráfico de linha que apresente as variáveis Receita Líquida e Receita Real ao longo dos anos (no mesmo gráfico) (peso: 1,0)"""
