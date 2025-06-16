@@ -1,11 +1,10 @@
 import streamlit as st
 # -*- coding: utf-8 -*-
-
-"""# 📊 Projeto Final – Análise Contábil com Ajuste Econômico"""
-
-
-"""Este projeto tem como objetivo integrar análise de dados contábeis de empresas com indicadores econômicos, utilizando Python, Pandas, Ipeadata e Streamlit.
-"""
+st.set_page_config(
+    page_title="Lista de Exercícios 4"
+    )
+st.header("📊 Projeto Final – Análise Contábil com Ajuste Econômico")
+st.write("Este projeto tem como objetivo integrar análise de dados contábeis de empresas com indicadores econômicos, utilizando Python, Pandas, Ipeadata e Streamlit.")
 
 if st.checkbox("Mostrar enunciado 1)"):
     st.write("📝 1) Configure o título na barra do navegador, da página do projeto no Streamlit e descrição inicial do projeto (peso: 1,0)")
