@@ -122,7 +122,12 @@ df2["Receita Real"] = df2["Receita Líquida"] - (df2["Receita Líquida"] * (df2[
 st.subheader(" 💾 Atualização dos Dados: Inclusão da Coluna 'Receita Real'")
 st.dataframe(df2)
 
-"""6) Crie gráfico de linha que apresente as variáveis Receita Líquida e Receita Real ao longo dos anos (no mesmo gráfico) (peso: 1,0)"""
+if st.checkbox("Mostrar enunciado 6)"):
+    st.write("📝 6) Crie gráfico de linha que apresente as variáveis Receita Líquida e Receita Real ao longo dos anos (no mesmo gráfico) (peso: 1,0)")
+else:
+    st.write(" 📌 Enunciado ocultado.")
+
+st.subheader("📈 Gráfico: Receita Líquida e Receita Real ao longo dos anos")
 
 fig, ax = plt.subplots(figsize=(10, 6))
 ax.grid(True)
