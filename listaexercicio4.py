@@ -15,11 +15,13 @@ if st.checkbox("Mostrar enunciado 1)"):
 else:
     st.write("Enunciado ocultado.")
 
+if st.checkbox("Mostrar enunciado 2)"):
+    st.write("2) Importe os dados do arquivo empresas_dados.csv utilizando pandas e apresente todas as linhas da df (peso: 1,0)")
+    st.write("Dica: Utilize `head(len(df))")
+else:
+    st.write("Enunciado ocultado.")
 
-"""2) Importe os dados do arquivo empresas_dados.csv utilizando pandas e apresente todas as linhas da df (peso: 1,0)
 
-Dica: Utilize `head(len(df))`
-"""
 
 import pandas as pd
 arquivo = "https://raw.githubusercontent.com/kamillapires/Projetofinal/refs/heads/main/empresas_dados.csv"
