@@ -1,3 +1,4 @@
+import streamlit as st
 # -*- coding: utf-8 -*-
 """ListaExercicio4.ipynb
 
