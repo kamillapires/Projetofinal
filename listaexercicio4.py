@@ -43,11 +43,14 @@ import matplotlib.pyplot as plt
 df["Margem Líquida"] = df["Lucro Líquido"] / df["Receita Líquida"] * 100
 df["ROA"] = df["Lucro Líquido"] / df["Ativo Total"] * 100
 
-if st.checkbox('Mostrar dataframe atualizado'):
+
+mostrar_df = st.checkbox('Mostrar dataframe atualizado')
+
+if mostrar_df:
     st.subheader("DataFrame atualizado com as colunas Margem Líquida e ROA adicionadas:")
     st.dataframe(df)
 else:
-    st.write("Ocultar dataframe atualizado")
+    st.write("Clique acima para exibir o dataframe atualizado.")
 
 df_agrupado = df.groupby('Ano')[['Margem Líquida', 'ROA']].mean().reset_index()
 
