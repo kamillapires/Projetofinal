@@ -98,13 +98,14 @@ ipca_dados = ip.timeseries("PRECOS_IPCAG", yearGreaterThan=2009, yearSmallerThan
 ipca_dados = ipca_dados.rename(columns={"YEAR": "Ano", "VALUE ((% a.a.))": "IPCA"})
 st.dataframe(ipca_dados)
 
-"""5) Combine as duas df (Excel e IPEA) em uma nova df e calcule nova coluna chamada Receita Real (peso: 2,0)
-
-- Utilize a função `pd.merge()` para unificar as duas df utiilizando a coluna Ano como conexão (chave primária) entre elas
-- Crie nova coluna chamada Receita Real que será o resultado da Receita Líquida de cada ano deduzido o IPCA do ano: `Receita Real = Receitta Líquida - ( Receita Líquida * (IPCA/100) )`
-- Apresente a nova df combinada
-
-"""
+if st.checkbox("Mostrar enunciado 5)"):
+    st.write("📝 5) Combine as duas df (Excel e IPEA) em uma nova df e calcule nova coluna chamada Receita Real (peso: 2,0)")
+    st.write("- Utilize a função `pd.merge()` para unificar as duas df utiilizando a coluna Ano como conexão (chave primária) entre elas")
+    st.write("- Crie nova coluna chamada Receita Real que será o resultado da Receita Líquida de cada ano deduzido o IPCA do ano: `Receita Real = Receitta Líquida - ( Receita Líquida * (IPCA/100) )")
+    st.write("- Apresente a nova df combinada")
+    
+else:
+    st.write(" 📌 Enunciado ocultado.")
 
 #Combinado as duas df
 
