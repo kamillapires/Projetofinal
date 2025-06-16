@@ -107,13 +107,13 @@ st.dataframe(ipca_dados)
 
 df2 = pd.merge(df, ipca_dados, on='Ano')
 if st.checkbox('Mostrar dataframe unificado:'):
-    st.write("DATAFRAME UNIFICADO:")
+    st.write("Dataframe Unificado:")
     st.dataframe(df2)
 
 
 #Nova df com a nova coluna de Receita Real 
 df2["Receita Real"] = df2["Receita Líquida"] - (df2["Receita Líquida"] * (df2["IPCA"]/100))
-st.write("DATAFRAME COMBINADO:")
+st.write("DATAFRAME COMBINADO COM A NOVA COLUNA RECEITA REAL ADICIONADA:")
 st.dataframe(df2)
 
 """6) Crie gráfico de linha que apresente as variáveis Receita Líquida e Receita Real ao longo dos anos (no mesmo gráfico) (peso: 1,0)"""
