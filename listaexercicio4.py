@@ -40,7 +40,7 @@ df["Margem Líquida"] = df["Lucro Líquido"] / df["Receita Líquida"] * 100
 df["ROA"] = df["Lucro Líquido"] / df["Ativo Total"] * 100
 
 
-mostrar_df = st.checkbox('Mostrar dataframe atualizado')
+mostrar_df = st.checkbox('Mostrar dados atualizados')
 
 if mostrar_df:
     st.subheader("📂 Dados atualizados com as colunas Margem Líquida e ROA:")
