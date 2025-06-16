@@ -79,7 +79,7 @@ if st.checkbox("Mostrar enunciado 4)"):
 else:
     st.write("Enunciado ocultado.")
 
-st.subheader("IPCA: taxa de variação anual (em %):")
+st.subheader("🔁 IPCA: taxa de variação anual (em %):")
     
 #Procurando todos os conjuntos de dados com o codigo ou nome igual a "IPCA"
 
