@@ -49,7 +49,7 @@ df_agrupado = df.groupby('Ano')[['Margem Líquida', 'ROA']].mean().reset_index()
 fig, ax = plt.subplots()
 plt.figure(figsize=(10, 6))
 plt.grid(True)
-ax.plt.xticks(df_agrupado['Ano'])
+plt.xticks(df_agrupado['Ano'])
 
 ax.plt.plot(df_agrupado['Ano'], df_agrupado['Margem Líquida'], marker='o', label='Margem Líquida')
 ax.plt.plot(df_agrupado['Ano'], df_agrupado['ROA'], marker='o', label='ROA')
