@@ -29,7 +29,7 @@ Dica: Utilize `head(len(df))`
 """
 
 import pandas as pd
-arquivo = "/content/empresas_dados.csv"
+arquivo = https://raw.githubusercontent.com/kamillapires/Projetofinal/refs/heads/main/empresas_dados.csv
 df = pd.read_csv(arquivo, sep=";")
 st.dataframe(df.head(len(df)))
 
