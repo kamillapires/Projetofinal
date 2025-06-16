@@ -70,16 +70,15 @@ ax.set_xticks(anos)
 fig.tight_layout()
 st.pyplot(fig)
 
-"""4) Utilize o pacote ipeadatapy e faça busca para encontrar o indicador que traga o IPCA, taxa de variação, em % e anual: (peso: 2,0)
-
-- Baixe os dados no período de 2010 a 2024
-- Altere o nome da coluna "YEAR" para "Ano"
-- Altere o nome da coluna "VALUE ((% a.a.))" para "IPCA"
-- Apresente a df para checar se tudo deu certo
-"""
-
-
-
+if st.checkbox("Mostrar enunciado 4)"):
+    st.write("4) Utilize o pacote ipeadatapy e faça busca para encontrar o indicador que traga o IPCA, taxa de variação, em % e anual: (peso: 2,0)")
+    st.write("- Baixe os dados no período de 2010 a 2024")
+    st.write("- Altere o nome da coluna 'YEAR' para 'Ano'")
+    st.write("- Altere o nome da coluna 'VALUE ((% a.a.))' para 'IPCA'")
+    st.write("- Apresente a df para checar se tudo deu certo")
+else:
+    st.write("Enunciado ocultado.")
+    
 #Procurando todos os conjuntos de dados com o codigo ou nome igual a "IPCA"
 
 import ipeadatapy as ip
