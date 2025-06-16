@@ -1,7 +1,7 @@
 import streamlit as st
 # -*- coding: utf-8 -*-
 
-# 📊 Projeto Final – Análise Contábil com Ajuste Econômico
+"""# 📊 Projeto Final – Análise Contábil com Ajuste Econômico"""
 
 """Este projeto tem como objetivo integrar análise de dados contábeis de empresas com indicadores econômicos, utilizando Python, Pandas, Ipeadata e Streamlit.
 """
