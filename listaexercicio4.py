@@ -52,6 +52,7 @@ if mostrar_df:
 else:
     st.write("Clique acima para exibir o dataframe atualizado.")
 
+st.subheader("Gráfico de Margem Líquida e ROA ao longo dos anos:")
 df_agrupado = df.groupby('Ano')[['Margem Líquida', 'ROA']].mean().reset_index()
 
 anos = df_agrupado['Ano'].unique()  # Garante que todos os anos estejam listados
