@@ -78,6 +78,8 @@ if st.checkbox("Mostrar enunciado 4)"):
     st.write("- Apresente a df para checar se tudo deu certo")
 else:
     st.write("Enunciado ocultado.")
+
+st.subheader("Dados de IPCA: taxa de variação anual (em %):)
     
 #Procurando todos os conjuntos de dados com o codigo ou nome igual a "IPCA"
 
