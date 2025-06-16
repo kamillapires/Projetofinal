@@ -43,10 +43,10 @@ df["ROA"] = df["Lucro Líquido"] / df["Ativo Total"] * 100
 mostrar_df = st.checkbox('Mostrar dataframe atualizado')
 
 if mostrar_df:
-    st.subheader("DataFrame atualizado com as colunas Margem Líquida e ROA:")
+    st.subheader("📂 DataFrame atualizado com as colunas Margem Líquida e ROA:")
     st.dataframe(df)
 else:
-    st.write("Clique acima para exibir o dataframe atualizado.")
+    st.write(" 📌 Clique acima para exibir o dataframe atualizado.")
 
 st.subheader("📈 Gráfico de Indicadores: Margem Líquida e ROA ao Longo do Tempo:")
 df_agrupado = df.groupby('Ano')[['Margem Líquida', 'ROA']].mean().reset_index()
