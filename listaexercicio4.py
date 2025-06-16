@@ -118,6 +118,7 @@ ax.set_title("Receita Líquida e Receita Real ao longo dos anos")
 ax.set_xlabel("Anos")
 ax.set_ylabel("Valores")
 ax.legend(title="Indicadores")
+ax.set_xticks(anos)
 fig.tight_layout()
 st.pyplot(fig)
 
