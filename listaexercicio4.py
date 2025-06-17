@@ -129,7 +129,7 @@ else:
 
 st.subheader("📈 Gráfico: Receita Líquida e Receita Real ao longo dos anos:")
 
-fig, ax = plt.subplots(figsize=(10, 6))
+fig, ax = plt.subplots(figsize=(12, 6))
 ax.grid(True)
 ax.plot(df2["Ano"], df2["Receita Líquida"], marker='o', label='Receita Líquida')
 ax.plot(df2["Ano"], df2["Receita Real"], marker='o', label='Receita Real')
