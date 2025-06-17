@@ -129,13 +129,13 @@ else:
 
 st.subheader("📈 Receita Líquida e Receita Real por Empresa ao Longo dos Anos:")
 
+df2 = df2.sort_values(by="Ano")
+anos = df2["Ano"].unique()
+
 fig, ax = plt.subplots(figsize=(10, 6))
-empresas = df2["Empresa"].unique()
-for empresa in empresas:
-    dados_empresa = df2[df2["Empresa"] == empresa]
-    ax.plot(dados_empresa["Ano"], dados_empresa["Receita Líquida"], marker='o', label=f"{empresa} - Receita Líquida")
-    ax.plot(dados_empresa["Ano"], dados_empresa["Receita Real"], marker='o', linestyle='--', label=f"{empresa} - Receita Real")
 ax.grid(True)
+ax.plot(df2["Ano"], df2["Receita Líquida"], marker='o', label='Receita Líquida')
+ax.plot(df2["Ano"], df2["Receita Real"], marker='o', label='Receita Real')
 ax.set_title("Receita Líquida e Receita Real ao longo dos anos")
 ax.set_xlabel("Anos")
 ax.set_ylabel("Valores")
