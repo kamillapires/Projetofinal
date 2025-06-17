@@ -56,7 +56,7 @@ anos = sorted(anos)
 
 fig, ax = plt.subplots()
 plt.figure(figsize=(10, 6))
-plt.grid(True)
+ax.grid(True)
 plt.xticks(df_agrupado['Ano'])
 
 ax.plot(df_agrupado['Ano'], df_agrupado['Margem Líquida'], marker='o', label='Margem Líquida')
