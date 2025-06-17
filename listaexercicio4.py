@@ -127,7 +127,7 @@ if st.checkbox("Mostrar enunciado 6)"):
 else:
     st.write(" 📌 Enunciado ocultado.")
 
-st.subheader("📈 Gráfico: Receita Líquida e Receita Real ao longo dos anos:")
+st.subheader("📈 Gráfico: Receita Líquida e Receita Real ao longo dos anos (por empresas):")
 
 fig, ax = plt.subplots(figsize=(10, 6))
 empresas = df2["Empresa"].unique()
