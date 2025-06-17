@@ -127,7 +127,7 @@ if st.checkbox("Mostrar enunciado 6)"):
 else:
     st.write(" 📌 Enunciado ocultado.")
 
-st.subheader("📈 Receita Líquida e Receita Real por Empresa ao Longo dos Anos:")
+st.subheader("📈 Receita Líquida e Receita Real ao Longo dos Anos:")
 
 df_agrupado2 = df2.groupby('Ano')[['Receita Líquida', 'Receita Real']].sum().reset_index()
 
