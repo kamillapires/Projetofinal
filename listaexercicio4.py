@@ -134,7 +134,7 @@ empresas = df2["Empresa"].unique()
 for empresa in empresas:
     dados_empresa = df2[df2["Empresa"] == empresa]
     ax.plot(dados_empresa["Ano"], dados_empresa["Receita Líquida"], marker='o', label=f"{empresa} - Receita Líquida")
-    ax.plot(dados_empresa["Ano"], dados_empresa["Receita Real"], marker='s', linestyle='--', label=f"{empresa} - Receita Real")
+    ax.plot(dados_empresa["Ano"], dados_empresa["Receita Real"], marker='o', linestyle='--', label=f"{empresa} - Receita Real")
 ax.grid(True)
 ax.set_title("Receita Líquida e Receita Real ao longo dos anos")
 ax.set_xlabel("Anos")
