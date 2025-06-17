@@ -138,7 +138,6 @@ ax.set_xlabel("Anos")
 ax.set_ylabel("Valores")
 ax.legend(title="Indicadores")
 ax.set_xticks(anos)
-fig.tight_layout()
 st.pyplot(fig)
 
 if st.checkbox("Mostrar enunciado 7)"):
