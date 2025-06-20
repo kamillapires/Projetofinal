@@ -49,12 +49,13 @@ else:
 
 st.subheader("📈 Gráfico de Indicadores: Margem Líquida e ROA ao Longo do Tempo:")
 
-
 df_agrupado = df.groupby('Ano')[['Margem Líquida', 'ROA']].mean().reset_index()
+anos = df_agrupado['Ano'].sort_values().unique()
 
 fig, ax = plt.subplots()
 plt.figure(figsize=(14, 10))
 ax.grid(True)
+ax.set_xticks(anos)
 plt.xticks(df_agrupado['Ano'])
 
 ax.plot(df_agrupado['Ano'], df_agrupado['Margem Líquida'], marker='o', label='Margem Líquida')
@@ -64,6 +65,7 @@ ax.set_title("Margem Líquida e ROA ao longo dos anos")
 ax.set_xlabel("Anos")
 ax.set_ylabel("Valores")
 ax.legend(title="Indicadores")
+
 fig.tight_layout()
 st.pyplot(fig)
 
