@@ -48,10 +48,9 @@ else:
     st.write(" ℹ️ Clique acima para exibir os dados atualizados.")
 
 st.subheader("📈 Gráfico de Indicadores: Margem Líquida e ROA ao Longo do Tempo:")
-df_agrupado = df.groupby('Ano')[['Margem Líquida', 'ROA']].mean().reset_index()
 
-anos = df_agrupado['Ano'].unique()  # Garante que todos os anos estejam listados
-anos = sorted(anos)
+
+df_agrupado = df.groupby('Ano')[['Margem Líquida', 'ROA']].mean().reset_index()
 
 fig, ax = plt.subplots()
 plt.figure(figsize=(14, 10))
