@@ -13,13 +13,11 @@ if st.checkbox("Mostrar enunciado 1)"):
     st.write("- Título da página (`header`): Projeto Final - Análise Contábil com Ajuste Econômico.")
     st.write("- Descrição projeto (`write`): Este projeto tem como objetivo integrar análise de dados contábeis de empresas com indicadores econômicos, utilizando Python, Pandas, Ipeadata e Streamlit.")
 else:
-    st.write("📌 Enunciado ocultado.")
+    st.write("📌 Enunciado ocultado — clique acima para visualizar.")
 
-if st.checkbox("Mostrar enunciado 2)"):
-    st.write("📝 2) Importe os dados do arquivo empresas_dados.csv utilizando pandas e apresente todas as linhas da df. (peso: 1,0)")
-    st.write("Dica: Utilize `head(len(df))")
-else:
-    st.write("📌 Enunciado ocultado.")
+
+"""📝 2) Importe os dados do arquivo empresas_dados.csv utilizando pandas e apresente todas as linhas da df. (peso: 1,0)"""
+    """("Dica: Utilize `head(len(df))"""
 
 st.subheader("🗃️ Dados das Empresas:")
 
@@ -28,12 +26,9 @@ arquivo = "https://raw.githubusercontent.com/kamillapires/Projetofinal/refs/head
 df = pd.read_csv(arquivo, sep=";")
 st.dataframe(df.head(len(df)))
 
-if st.checkbox("Mostrar enunciado 3)"):
-    st.write("📝 3) Calcule os indicadores Margem Líquida e ROA e salve como novas coluna da df. Depois apresente os dois indicadores no mesmo gráfico de linhas, agrupado por Ano. (peso: 1,0)")
-    st.write("- Margem Líquida = Lucro Líquido / Receita Líquida * 100")
-    st.write("- ROA = Lucro Líquido / Ativo Total *  100")
-else:
-    st.write(" 📌 Enunciado ocultado.")
+
+"""📝 3) Calcule os indicadores Margem Líquida e ROA e salve como novas coluna da df. Depois apresente os dois indicadores no mesmo gráfico de linhas, agrupado por Ano. (peso: 1,0)"""
+
     
 import matplotlib.pyplot as plt
 df["Margem Líquida"] = df["Lucro Líquido"] / df["Receita Líquida"] * 100
@@ -70,8 +65,8 @@ ax.set_xticks(anos)
 fig.tight_layout()
 st.pyplot(fig)
 
-if st.checkbox("Mostrar enunciado 4)"):
-    st.write("📝 4) Utilize o pacote ipeadatapy e faça busca para encontrar o indicador que traga o IPCA, taxa de variação, em % e anual: (peso: 2,0).")
+
+"""📝 4) Utilize o pacote ipeadatapy e faça busca para encontrar o indicador que traga o IPCA, taxa de variação, em % e anual: (peso: 2,0)."""
     st.write("- Baixe os dados no período de 2010 a 2024.")
     st.write("- Altere o nome da coluna 'YEAR' para 'Ano'.")
     st.write("- Altere o nome da coluna 'VALUE ((% a.a.))' para 'IPCA'.")
@@ -146,4 +141,4 @@ if st.checkbox("Mostrar enunciado 7)"):
     st.write("- Crie novo repositório público no GitHub e leve os arquivos .py e .csv pra lá. Aproveite e crie o arquivo requirements.txt com os pacotes utilizados no projeto")
     st.write("- Crie novo projeto no Streamlit e associe ao repositório da lista")
 else:
-    st.write(" 📌 Enunciado ocultado.")
+    st.write(" 📌 Enunciado ocultado — clique acima para visualizar.")
