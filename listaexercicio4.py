@@ -55,7 +55,7 @@ anos = df_agrupado['Ano'].unique()  # Garante que todos os anos estejam listados
 anos = sorted(anos)
 
 fig, ax = plt.subplots()
-plt.figure(figsize=(10, 6))
+plt.figure(figsize=(10, 10))
 ax.grid(True)
 plt.xticks(df_agrupado['Ano'])
 
