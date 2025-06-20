@@ -20,7 +20,7 @@ st.write("Este projeto tem como objetivo integrar análise de dados contábeis d
 
 """📝 2) Importe os dados do arquivo empresas_dados.csv utilizando pandas e apresente todas as linhas da df. (peso: 1,0)
     
-Dica: Utilize `head(len(df)"""
+- Dica: Utilize `head(len(df)"""
 
 st.subheader("🗃️ Dados das Empresas:")
 
