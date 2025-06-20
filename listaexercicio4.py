@@ -16,8 +16,8 @@ else:
     st.write("📌 Enunciado ocultado — clique acima para visualizar.")
 
 
-"""📝 2) Importe os dados do arquivo empresas_dados.csv utilizando pandas e apresente todas as linhas da df. (peso: 1,0)"""
-    st.write("Dica: Utilize `head(len(df)")
+"""📝 2) Importe os dados do arquivo empresas_dados.csv utilizando pandas e apresente todas as linhas da df. (peso: 1,0)
+    Dica: Utilize `head(len(df)"""
 
 st.subheader("🗃️ Dados das Empresas:")
 
