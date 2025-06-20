@@ -7,13 +7,15 @@ st.set_page_config(
 st.header("📊 Projeto Final – Análise Contábil com Ajuste Econômico")
 st.write("Este projeto tem como objetivo integrar análise de dados contábeis de empresas com indicadores econômicos, utilizando Python, Pandas, Ipeadata e Streamlit.")
 
-if st.checkbox("Mostrar enunciado 1)"):
-    st.write("📝 1) Configure o título na barra do navegador, da página do projeto no Streamlit e descrição inicial do projeto. (peso: 1,0)")
-    st.write("- Título na barra (`page_title`): Lista de Exercícios 4.")
-    st.write("- Título da página (`header`): Projeto Final - Análise Contábil com Ajuste Econômico.")
-    st.write("- Descrição projeto (`write`): Este projeto tem como objetivo integrar análise de dados contábeis de empresas com indicadores econômicos, utilizando Python, Pandas, Ipeadata e Streamlit.")
-else:
-    st.write("📌 Enunciado ocultado — clique acima para visualizar.")
+
+"""📝 1) Configure o título na barra do navegador, da página do projeto no Streamlit e descrição inicial do projeto. (peso: 1,0)
+
+    - Título na barra (`page_title`): Lista de Exercícios 4.
+    
+    - Título da página (`header`): Projeto Final - Análise Contábil com Ajuste Econômico.
+    
+    - Descrição projeto (`write`): Este projeto tem como objetivo integrar análise de dados contábeis de empresas com indicadores econômicos, utilizando Python, Pandas, Ipeadata e Streamlit."""
+
 
 
 """📝 2) Importe os dados do arquivo empresas_dados.csv utilizando pandas e apresente todas as linhas da df. (peso: 1,0)
@@ -144,10 +146,9 @@ ax.legend(title="Indicadores")
 ax.set_xticks(anos)
 st.pyplot(fig)
 
-if st.checkbox("Mostrar enunciado 7)"):
-    st.write("📝 7) Faça os ajustes necessários e leve este projeto para a web usando GitHub e Streamlit (peso: 2,0)")
-    st.write("- Faça os ajustes necessários no projeto para ser publicado no Streamlit")
-    st.write("- Crie novo repositório público no GitHub e leve os arquivos .py e .csv pra lá. Aproveite e crie o arquivo requirements.txt com os pacotes utilizados no projeto")
-    st.write("- Crie novo projeto no Streamlit e associe ao repositório da lista")
-else:
-    st.write(" 📌 Enunciado ocultado — clique acima para visualizar.")
+
+"""📝 7) Faça os ajustes necessários e leve este projeto para a web usando GitHub e Streamlit (peso: 2,0)
+    - Faça os ajustes necessários no projeto para ser publicado no Streamlit
+    - Crie novo repositório público no GitHub e leve os arquivos .py e .csv pra lá. Aproveite e crie o arquivo requirements.txt com os pacotes utilizados no projeto
+    - Crie novo projeto no Streamlit e associe ao repositório da lista"""
+
