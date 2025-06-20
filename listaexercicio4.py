@@ -18,7 +18,7 @@ else:
 
 """📝 2) Importe os dados do arquivo empresas_dados.csv utilizando pandas e apresente todas as linhas da df. (peso: 1,0)
     
-    Dica: Utilize `head(len(df)"""
+Dica: Utilize `head(len(df)"""
 
 st.subheader("🗃️ Dados das Empresas:")
 
@@ -29,8 +29,9 @@ st.dataframe(df.head(len(df)))
 
 
 """📝 3) Calcule os indicadores Margem Líquida e ROA e salve como novas coluna da df. Depois apresente os dois indicadores no mesmo gráfico de linhas, agrupado por Ano. (peso: 1,0)
-          - Margem Líquida = Lucro Líquido / Receita Líquida * 100
-          - ROA = Lucro Líquido / Ativo Total * 100"""
+
+- Margem Líquida = Lucro Líquido / Receita Líquida * 100
+- ROA = Lucro Líquido / Ativo Total * 100"""
     
 import matplotlib.pyplot as plt
 df["Margem Líquida"] = df["Lucro Líquido"] / df["Receita Líquida"] * 100
@@ -69,10 +70,14 @@ st.pyplot(fig)
 
 
 """📝 4) Utilize o pacote ipeadatapy e faça busca para encontrar o indicador que traga o IPCA, taxa de variação, em % e anual: (peso: 2,0).
-    - Baixe os dados no período de 2010 a 2024.
-    - Altere o nome da coluna 'YEAR' para 'Ano'.
-    - Altere o nome da coluna 'VALUE ((% a.a.))' para 'IPCA'.
-    - Apresente a df para checar se tudo deu certo."""
+
+- Baixe os dados no período de 2010 a 2024.
+
+- Altere o nome da coluna 'YEAR' para 'Ano'.
+
+- Altere o nome da coluna 'VALUE ((% a.a.))' para 'IPCA'.
+
+- Apresente a df para checar se tudo deu certo."""
 
 
 st.subheader("🔁 IPCA: taxa de variação anual (em %):")
@@ -96,9 +101,12 @@ st.dataframe(ipca_dados)
 
 
 """📝 5) Combine as duas df (Excel e IPEA) em uma nova df e calcule nova coluna chamada Receita Real. (peso: 2,0)    
-    - Utilize a função `pd.merge()` para unificar as duas df utiilizando a coluna Ano como conexão (chave primária) entre elas.
-    - Crie nova coluna chamada Receita Real que será o resultado da Receita Líquida de cada ano deduzido o IPCA do ano: `Receita Real = Receita Líquida - ( Receita Líquida * (IPCA/100) ).
-    - Apresente a nova df combinada."""
+
+- Utilize a função `pd.merge()` para unificar as duas df utiilizando a coluna Ano como conexão (chave primária) entre elas.
+
+- Crie nova coluna chamada Receita Real que será o resultado da Receita Líquida de cada ano deduzido o IPCA do ano: `Receita Real = Receita Líquida - ( Receita Líquida * (IPCA/100) ).
+
+- Apresente a nova df combinada."""
     
 
 #Combinado as duas df
